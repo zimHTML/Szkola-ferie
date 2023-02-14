@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body {
+    
+    
+    font-size: 55px;
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+    user-select: none;
+    
+}  
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+h1 {
+    
+    font-weight: bolder;
+    display: flex;
+    margin-left: 45%;
+    margin-right: 50%;
+    font-size: 70px;
+    text-shadow: 0px 0px 7px#000000;
+  }
+
+
+
+*{
+    font-size: 30px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvideo.cgtn.com%2Fnews%2F2020-05-29%2FMineral-extraction-banned-in-Qinling-Mountains--QT2HtUJSgg%2Fvideo%2F712732315f0849c691c42aacc5b4f516%2F712732315f0849c691c42aacc5b4f516.jpg&f=1&nofb=1&ipt=83901e1ec4c3f7507412721132e4470b4829c8b39d9d6d4fefabf085ecf24517&ipo=images") center no-repeat;
+	background-size: cover;
+}
+
+
+ 
+#Toper {
+	text-decoration: none;
+	margin-left: 32%;
+	margin-right: 50%;
+	margin-top: 20px;
+	font-size: 50px;
+	font-weight: 600;
+	position: absolute;
+	justify-content: center;
+	display: flexbox;
+	text-transform: capitalize;
+	white-space: nowrap;
+	text-shadow: 0px 0px 8px black;
+}
+
+@keyframes ikda {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#myText {
+	font-family: Lilita One, sans-serif;
+	margin-left: 12%;
+	margin-right: 20%;
+	margin-top: 200px;
+	font-size: 30px;
+	font-weight: 600;
+	position: absolute;
+	justify-content: center;
+	display: flexbox;
+	text-transform: capitalize;
+	white-space: nowrap;
+	color: darkblue;	
+	text-shadow: 0px 0px 40px #000000;
+	
+
+}
+@keyframes ikdda {
+	0% {
+		opacity: 0;
+		transform: rotate(100deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1) scale3d(3px); 
+	}
+}
+
+
+
+
+.modal {
+	animation: myAnim 1s ease 0s 1 normal forwards;
+	display: none; /* Hidden by default */
+	position: absolute; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: none; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  #myText:hover {
+	animation: ASS 1s ease 0s infinite normal forwards;
+	font-family: Lilita One, sans-serif;
+	margin-left: 12%;
+	margin-right: 20%;
+	margin-top: 200px;
+	font-size: 30px;
+	font-weight: 600;
+	position: absolute;
+	justify-content: center;
+	display: flexbox;
+	text-transform: capitalize;
+	white-space: nowrap;
+	color: darkblue;	
+	text-shadow: 0px 0px 40px #000000;
+	
+
+}
+@keyframes ASS {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+#L1 {
+position: absolute;
+display: flexbox;
+margin: 0;
+
+}
+
+
+
+
+
+
+.playpause {
+	label {
+	  display: block;
+	  box-sizing: border-box;
+	  width: 0;
+	  height: 74px;
+  
+	  border-color: transparent transparent transparent #202020;
+	  transition: 100ms all ease;
+	  cursor: pointer;
+	  border-style: double;
+	  border-width: 0px 0 0px 60px;
+	}
+	input[type="checkbox"] {
+	  position: absolute;
+	  left: -9999px;
+	  &:checked + label {
+		border-style: solid;
+		border-width: 37px 0 37px 60px;
+	  }
+	  &:focus + label {
+		box-shadow: 0 0 5px lightblue;
+	  }
+	}
+  }
+
+#myText2 {
+	font-family: Lilita One, sans-serif;
+	margin-left: 12%;
+	margin-right: 20%;
+	margin-top: 400px;
+	font-size: 30px;
+	font-weight: 600;
+	position: absolute;
+	justify-content: center;
+	display: flexbox;
+	text-transform: capitalize;
+	white-space: nowrap;
+	color: darkblue;	
+	text-shadow: 0px 0px 40px #000000;
+
+}
+.modal2 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: none	; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box for the second modal */
+  .modal-content2 {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button for the second modal */
+  .close2 {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  
+  
