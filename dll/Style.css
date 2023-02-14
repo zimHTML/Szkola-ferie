@@ -1,0 +1,11 @@
+p {
+  @if $type == line1 {
+    color: blue;
+  } @else if $type == line2 {
+    color: red;
+  } @else if $type == line3 {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
