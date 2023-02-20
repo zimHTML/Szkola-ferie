@@ -1,0 +1,110 @@
+
+body {
+    text-shadow: 0px 0px 7px#000000;
+    font-size: 55px;
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+    user-select: none;
+    background: linear-gradient(300deg, #fd2252, #242bce)
+}  
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+h1 {
+    
+    font-weight: bolder;
+    display: flex;
+    margin-left: 45%;
+    margin-right: 50%;
+    font-size: 70px;
+    text-shadow: 0px 0px 7px#000000;
+  }
+
+
+
+*{
+    font-size: 30px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvideo.cgtn.com%2Fnews%2F2020-05-29%2FMineral-extraction-banned-in-Qinling-Mountains--QT2HtUJSgg%2Fvideo%2F712732315f0849c691c42aacc5b4f516%2F712732315f0849c691c42aacc5b4f516.jpg&f=1&nofb=1&ipt=83901e1ec4c3f7507412721132e4470b4829c8b39d9d6d4fefabf085ecf24517&ipo=images") center no-repeat;
+	background-size: cover;
+	position: relative;
+  overflow: hidden;
+}
+
+
+#Mainstrona{
+margin-left: auto;
+text-decoration: none;
+margin-top: 0px;
+}
+
+#nie1{
+	display: flex;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 18%;
+}
+
+#nie2{
+	display: flex;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 16%;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+
+}
+#nie3{
+	display: flex;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 14%;
+}
+#nie4{
+	display: flex;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 12%;
+}
+#nie5{
+	display: flex;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 10%;
+}
+
+iframe{
+	width: 700px;
+	height: 400px;
+	margin-left: 1000px;
+
+}

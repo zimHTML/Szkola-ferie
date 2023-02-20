@@ -8,24 +8,20 @@ const questions = [
   },
   {
     question: "W zimie słońce zachodzi szybciej przez co łatwiej o wypadek (np: samochodowy, na sankach)",
-    choices: ["Rome", "Paris", "London", "Berlin"],
+    choices: ["Prawda", "Falsz"],
     answer: 0
   },
   {
-    question: "What is the capital of Germany?",
-    choices: ["Berlin", "Paris", "London", "Rome"],
+    question: "Ciepłe ubieranie się w zimne dni ochroni cię przed mrozem",
+    choices: ["Prawda", "Falsz"],
     answer: 0
   },
   {
-    question: "What is the capital of Spain?",
-    choices: ["Madrid", "Paris", "London", "Berlin"],
+    question: "To nie dzala :)",
+    choices: ["####","####"],
     answer: 0
   },
-  {
-    question: "What is the capital of the United Kingdom?",
-    choices: ["London", "Paris", "Berlin", "Rome"],
-    answer: 0
-  }
+
 ];
 
 function updateScore() {
@@ -41,15 +37,15 @@ function showQuestion() {
 }
 
 function checkAnswer(choice) {
-  let question = questions[currentQuestion];
-  if (choice === question.answer) {
-    score++;
+    let question = questions[currentQuestion];
+    if (choice === question.answer) {
+      score++;
+    }
     currentQuestion++;
+    if (currentQuestion === questions.length) {
+      document.getElementById("quiz").innerHTML = "Congratulations! You got " + score + "/" + questions.length;
+    } else {
+      showQuestion();
+      updateScore();
+    }
   }
-  if (currentQuestion === questions.length) {
-    document.getElementById("quiz").innerHTML = "Quiz Completed! Final Score: " + score + "/" + questions.length;
-  } else {
-    showQuestion();
-    updateScore();
-  }
-}
