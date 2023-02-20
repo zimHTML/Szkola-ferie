@@ -339,8 +339,8 @@ nav ul li a:hover::after{
   }
   
   #score {
-	display:block;
-	position: absolute;
+	display: flexbox;
+	position: fixed;
 	color: #6c6d6d;
 	color-scheme: rgb(94, 94, 94);
 	font-weight: 700;
@@ -363,7 +363,7 @@ nav ul li a:hover::after{
 	text-align: center;
 	margin: 10px auto;	
 
-#button {
+button:hover {
 	animation: sdasd 1s ease 0s 1 normal forwards;
 	text-align: center;
 	font-size: 16px;

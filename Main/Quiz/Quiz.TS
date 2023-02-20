@@ -17,8 +17,8 @@ const questions = [
     answer: 0
   },
   {
-    question: "To nie dzala :)",
-    choices: ["####","####"],
+    question: "999 to numer do policji.",
+    choices: ["Prawda","Falsz"],
     answer: 0
   },
 
